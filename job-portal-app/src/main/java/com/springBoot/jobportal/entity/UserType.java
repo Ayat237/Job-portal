@@ -11,10 +11,9 @@ public class UserType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-   // @Column(name="user_type_id")
     private int userTypeId;
 
-  //  @Column(name="user_type_name")
+
     private String userTypeName;
 
     @OneToMany(mappedBy = "userTypeId",

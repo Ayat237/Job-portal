@@ -14,7 +14,6 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-  //  @Column(name="user_id")
     private int userId;
 
     @Column(unique = true)
@@ -23,11 +22,9 @@ public class User {
     @NotEmpty
     private String password;
 
-   // @Column(name="is_active")
     private  boolean isActive;
 
     @DateTimeFormat(pattern = "dd-MM-yyyy")
-    //@Column(name="registration_date")
     private Date registrationDate;
 
     @ManyToOne(cascade = {
