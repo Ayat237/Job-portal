@@ -8,7 +8,7 @@ import java.util.List;
 @Table(name = "job_seeker_profile")
 public class JobSeekerProfile {
     @Id
-    private int userAccountId;
+    private Integer userAccountId;
 
     @OneToOne
     @JoinColumn(name = "user_account_id")
@@ -43,7 +43,7 @@ public class JobSeekerProfile {
     public JobSeekerProfile() {
     }
 
-    public JobSeekerProfile(int userAccountId, User userId, String firstName, String lastName, String profilePhoto, String city, String country, String state,
+    public JobSeekerProfile(Integer userAccountId, User userId, String firstName, String lastName, String profilePhoto, String city, String country, String state,
                             String workAuthorization, String employmentType, String resume, List<Skills> skills) {
         this.userAccountId = userAccountId;
         this.userId = userId;
@@ -151,12 +151,19 @@ public class JobSeekerProfile {
         this.userId = userId;
     }
 
-    public int getUserAccountId() {
+    public Integer getUserAccountId() {
         return userAccountId;
     }
 
-    public void setUserAccountId(int userAccountId) {
+    public void setUserAccountId(Integer userAccountId) {
         this.userAccountId = userAccountId;
+    }
+
+
+    @Transient
+    public String photosImagePath(){
+        if (profilePhoto == null || userAccountId == null ) return null;
+        return "/photos/candidate/"+userAccountId+"/"+profilePhoto;
     }
 
     @Override
@@ -173,7 +180,6 @@ public class JobSeekerProfile {
                 ", workAuthorization='" + workAuthorization + '\'' +
                 ", employmentType='" + employmentType + '\'' +
                 ", resume='" + resume + '\'' +
-                ", skills=" + skills +
                 '}';
     }
 }
