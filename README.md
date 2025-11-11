@@ -81,11 +81,12 @@ spring.datasource.url=jdbc:mysql://localhost:3306/job_portal_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 
-2. **Build and run the application**
+3. **Build and run the application**
    ```bash
    mvn clean install
    mvn spring-boot:run
   or build direct from IntelliJ
+  
 4. **Access the app**
 Open your browser and go to:
 [http://localhost:8080](http://localhost:8080)
