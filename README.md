@@ -35,7 +35,7 @@ Recruiters can post and manage job listings, view applicants, download résumés
 ---
 
 
-## 🏗️ Development Process
+## Development Process
 1. Set up Spring Boot project with Maven  
 2. Added HTML, JS, and CSS templates using Thymeleaf  
 3. Created database entities for Users, Jobs, and Applications  
@@ -65,7 +65,7 @@ Recruiters can post and manage job listings, view applicants, download résumés
 
 ---
 
-## 🧰 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - JDK 17 or higher  
@@ -85,7 +85,7 @@ Recruiters can post and manage job listings, view applicants, download résumés
    ```bash
    mvn clean install
    mvn spring-boot:run
-  or build direct from IntelliJ
+- or build direct from IntelliJ
   
 4. **Access the app**
       Open your browser and go to:
