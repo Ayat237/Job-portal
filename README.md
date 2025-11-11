@@ -77,9 +77,9 @@ Recruiters can post and manage job listings, view applicants, download résumés
 2. **Configure the database**
     Update your application.properties file:
 
-   spring.datasource.url=jdbc:mysql://localhost:3306/job_portal_db
-   spring.datasource.username=your_username
-   spring.datasource.password=your_password
+   - spring.datasource.url=jdbc:mysql://localhost:3306/job_portal_db
+   - spring.datasource.username=your_username
+   - spring.datasource.password=your_password
 
 4. **Build and run the application**
    ```bash
