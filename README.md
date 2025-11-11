@@ -75,11 +75,11 @@ Recruiters can post and manage job listings, view applicants, download résumés
 ### Steps
 1. **Clone the repository**
 2. **Configure the database**
-Update your application.properties file:
+      Update your application.properties file:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/job_portal_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+      spring.datasource.url=jdbc:mysql://localhost:3306/job_portal_db
+      spring.datasource.username=your_username
+      spring.datasource.password=your_password
 
 3. **Build and run the application**
    ```bash
@@ -88,8 +88,8 @@ spring.datasource.password=your_password
   or build direct from IntelliJ
   
 4. **Access the app**
-Open your browser and go to:
-[http://localhost:8080](http://localhost:8080)
+      Open your browser and go to:
+      [http://localhost:8080](http://localhost:8080)
 
 
 
